@@ -202,20 +202,26 @@ st.markdown("""
 
 @media (max-width: 768px) {
 
+    @media (max-width: 768px) {
+
     .main-title {
         font-size: 30px;
         line-height: 1.2;
+        color: white !important;
     }
 
     .main-subtitle {
         font-size: 15px;
         line-height: 1.5;
+        color: #D1D5DB !important;
     }
 
     .section-title {
         font-size: 21px;
+        color: white !important;
     }
 
+}
     .summary-card {
         min-height: 100px;
         padding: 15px;
