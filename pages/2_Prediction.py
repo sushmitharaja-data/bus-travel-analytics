@@ -66,21 +66,18 @@ st.markdown("""
 
 /* ================= MAIN PAGE ================= */
 
-/* ================= MAIN PAGE ================= */
-
 .main-title {
     font-size: 42px;
     font-weight: 800;
     margin-bottom: 5px;
-    color: #1F2937 !important;
+    color: white !important;
 }
 
 .main-subtitle {
     font-size: 17px;
-    color: #4B5563 !important;
+    color: #D1D5DB !important;
     margin-bottom: 25px;
 }
-
 
 /* ================= TRIP SUMMARY CARDS ================= */
 
@@ -188,7 +185,7 @@ st.markdown("""
     font-weight: 750;
     margin-top: 8px;
     margin-bottom: 18px;
-    color:  #1F2937;
+    color:  white;
 }
 
 
