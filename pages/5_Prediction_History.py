@@ -248,20 +248,10 @@ st.divider()
 
 st.subheader("🧾 Prediction Records")
 
-st.markdown(
-    '<div class="section-bubble">',
-    unsafe_allow_html=True
-)
-
 st.dataframe(
     history_df,
     use_container_width=True,
     hide_index=True
-)
-
-st.markdown(
-    '</div>',
-    unsafe_allow_html=True
 )
 
 
@@ -279,22 +269,10 @@ trend_df = pd.DataFrame({
 })
 
 trend_df = trend_df.set_index("Prediction")
-
-st.markdown(
-    '<div class="section-bubble">',
-    unsafe_allow_html=True
-)
-
 st.line_chart(
     trend_df,
     use_container_width=True
 )
-
-st.markdown(
-    '</div>',
-    unsafe_allow_html=True
-)
-
 
 # ============================================================
 # MODEL COMPARISON
@@ -311,19 +289,9 @@ model_df = history_df[
     ]
 ]
 
-st.markdown(
-    '<div class="section-bubble">',
-    unsafe_allow_html=True
-)
-
 st.bar_chart(
     model_df,
     use_container_width=True
-)
-
-st.markdown(
-    '</div>',
-    unsafe_allow_html=True
 )
 
 
@@ -351,22 +319,11 @@ if "Route" in history_df.columns:
         }
     )
 
-    st.markdown(
-        '<div class="section-bubble">',
-        unsafe_allow_html=True
-    )
-
     st.dataframe(
-        route_summary,
-        use_container_width=True,
-        hide_index=True
-    )
-
-    st.markdown(
-        '</div>',
-        unsafe_allow_html=True
-    )
-
+    route_summary,
+    use_container_width=True,
+    hide_index=True
+)
 
 # ============================================================
 # HISTORY MANAGEMENT
