@@ -185,7 +185,7 @@ st.markdown("""
     font-weight: 750;
     margin-top: 8px;
     margin-bottom: 18px;
-    color:  white;
+    color:  #1F2937;
 }
 
 
