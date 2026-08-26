@@ -127,11 +127,18 @@ st.markdown(
     font-size: 21px;
     font-weight: 800;
     margin-bottom: 15px;
+    color: white !important;
 }
 
 .recommendation-text {
     font-size: 17px;
     line-height: 1.8;
+    color: white !important;
+}
+
+.recommendation-text b {
+    color: white !important;
+    font-weight: 800;
 }
 
 /* =========================
