@@ -66,16 +66,18 @@ st.markdown("""
 
 /* ================= MAIN PAGE ================= */
 
+/* ================= MAIN PAGE ================= */
+
 .main-title {
     font-size: 42px;
     font-weight: 800;
     margin-bottom: 5px;
-    color: #F5F7FA;
+    color: #1F2937 !important;
 }
 
 .main-subtitle {
     font-size: 17px;
-    color: #B8BEC9;
+    color: #4B5563 !important;
     margin-bottom: 25px;
 }
 
@@ -186,7 +188,7 @@ st.markdown("""
     font-weight: 750;
     margin-top: 8px;
     margin-bottom: 18px;
-    color: #F5F7FA;
+    color:  #1F2937;
 }
 
 
