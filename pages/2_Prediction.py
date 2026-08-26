@@ -1,3 +1,4 @@
+```python
 import streamlit as st
 import pandas as pd
 import os
@@ -21,6 +22,10 @@ st.set_page_config(
 
 st.markdown("""
 <style>
+
+* {
+    box-sizing: border-box;
+}
 
 /* ================= SIDEBAR ================= */
 
@@ -66,6 +71,7 @@ st.markdown("""
     font-size: 42px;
     font-weight: 800;
     margin-bottom: 5px;
+    color: #F5F7FA;
 }
 
 .main-subtitle {
@@ -79,7 +85,7 @@ st.markdown("""
 
 .summary-card {
     background: #181A21;
-    border: 1px solid #2C303A;
+    border: 2px solid #555B68;
     border-radius: 16px;
     padding: 20px;
     text-align: center;
@@ -88,14 +94,14 @@ st.markdown("""
 
 .summary-label {
     font-size: 14px;
-    color: #AEB4C0;
+    color: #FFFFFF;
     margin-bottom: 8px;
 }
 
 .summary-value {
     font-size: 28px;
     font-weight: 750;
-    color: #F5F7FA;
+    color: #FFFFFF;
 }
 
 
@@ -108,7 +114,7 @@ st.markdown("""
         #121419
     );
 
-    border: 1px solid #30343E;
+    border: 2px solid #555B68;
     border-radius: 18px;
     padding: 25px;
     min-height: 155px;
@@ -125,7 +131,7 @@ st.markdown("""
 
 .prediction-label {
     font-size: 15px;
-    color: #B8BEC9;
+    color: #FFFFFF;
     margin-bottom: 12px;
 }
 
@@ -137,7 +143,7 @@ st.markdown("""
 
 .prediction-unit {
     font-size: 15px;
-    color: #AEB4C0;
+    color: #FFFFFF;
 }
 
 
@@ -145,10 +151,15 @@ st.markdown("""
 
 .status-card {
     background: #172A40;
-    border: 1px solid #24496C;
+    border: 2px solid #5B7FA3;
     border-radius: 16px;
     padding: 20px 25px;
     font-size: 17px;
+    color: #FFFFFF;
+}
+
+.status-card b {
+    color: #FFFFFF;
 }
 
 
@@ -156,11 +167,16 @@ st.markdown("""
 
 .explanation-card {
     background: #181A21;
-    border: 1px solid #2C303A;
+    border: 2px solid #555B68;
     border-radius: 16px;
     padding: 22px;
     font-size: 16px;
     line-height: 1.6;
+    color: #FFFFFF;
+}
+
+.explanation-card b {
+    color: #20C7C0;
 }
 
 
@@ -171,6 +187,7 @@ st.markdown("""
     font-weight: 750;
     margin-top: 8px;
     margin-bottom: 18px;
+    color: #F5F7FA;
 }
 
 
@@ -180,6 +197,107 @@ st.markdown("""
     height: 1px;
     background: #30343E;
     margin: 30px 0;
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .main-title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .main-subtitle {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .section-title {
+        font-size: 21px;
+    }
+
+    .summary-card {
+        min-height: 100px;
+        padding: 15px;
+        border-width: 2px;
+    }
+
+    .summary-label {
+        font-size: 13px;
+        color: #FFFFFF !important;
+    }
+
+    .summary-value {
+        font-size: 23px;
+        color: #FFFFFF !important;
+    }
+
+    .prediction-card {
+        min-height: 130px;
+        padding: 18px;
+        border-width: 2px;
+    }
+
+    .prediction-label {
+        font-size: 14px;
+        color: #FFFFFF !important;
+    }
+
+    .prediction-value {
+        font-size: 30px;
+    }
+
+    .prediction-unit {
+        font-size: 14px;
+        color: #FFFFFF !important;
+    }
+
+    .status-card {
+        padding: 17px;
+        font-size: 15px;
+        border: 2px solid #6E91B5;
+        color: #FFFFFF !important;
+    }
+
+    .status-card b {
+        color: #FFFFFF !important;
+    }
+
+    .explanation-card {
+        padding: 18px;
+        font-size: 15px;
+        line-height: 1.55;
+        border: 2px solid #626875;
+        color: #FFFFFF !important;
+    }
+
+    .explanation-card b {
+        color: #20C7C0 !important;
+    }
+
+}
+
+
+/* ================= STREAMLIT MOBILE FIX ================= */
+
+@media (max-width: 480px) {
+
+    .summary-card {
+        margin-bottom: 10px;
+    }
+
+    .prediction-card {
+        margin-bottom: 10px;
+    }
+
+    .status-card,
+    .explanation-card {
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+
 }
 
 </style>
@@ -712,3 +830,4 @@ st.markdown(
 st.caption(
     "✅ This prediction has been recorded in Prediction History."
 )
+```
