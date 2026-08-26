@@ -205,7 +205,7 @@ st.markdown("""
     .main-title {
         font-size: 30px;
         line-height: 1.2;
-        color: white !important;
+        color: Black !important;
     }
 
     .main-subtitle {
@@ -216,7 +216,7 @@ st.markdown("""
 
     .section-title {
         font-size: 21px;
-        color: white !important;
+        color: Black !important;
     }
 
 
