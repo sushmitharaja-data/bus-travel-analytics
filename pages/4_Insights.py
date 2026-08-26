@@ -500,20 +500,10 @@ summary_data = pd.DataFrame({
     ]
 })
 
-st.markdown(
-    '<div class="summary-card">',
-    unsafe_allow_html=True
-)
-
 st.dataframe(
     summary_data,
     use_container_width=True,
     hide_index=True
-)
-
-st.markdown(
-    '</div>',
-    unsafe_allow_html=True
 )
 
 # ============================================================
