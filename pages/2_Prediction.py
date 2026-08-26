@@ -829,4 +829,3 @@ st.markdown(
 st.caption(
     "✅ This prediction has been recorded in Prediction History."
 )
-
