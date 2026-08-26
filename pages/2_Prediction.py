@@ -219,7 +219,7 @@ st.markdown("""
         color: white !important;
     }
 
-}
+
     .summary-card {
         min-height: 100px;
         padding: 15px;
