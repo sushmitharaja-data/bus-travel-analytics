@@ -1,4 +1,3 @@
-```python
 import streamlit as st
 import pandas as pd
 import os
@@ -830,4 +829,4 @@ st.markdown(
 st.caption(
     "✅ This prediction has been recorded in Prediction History."
 )
-```
+
