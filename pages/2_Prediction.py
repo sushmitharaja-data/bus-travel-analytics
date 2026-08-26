@@ -185,10 +185,8 @@ st.markdown("""
     font-weight: 750;
     margin-top: 8px;
     margin-bottom: 18px;
-    color:  #1F2937;
+    color: white !important;
 }
-
-
 /* ================= DIVIDER ================= */
 
 .custom-divider {
@@ -200,9 +198,9 @@ st.markdown("""
 
 /* ================= MOBILE RESPONSIVE ================= */
 
-@media (max-width: 768px) {
 
-    @media (max-width: 768px) {
+
+@media (max-width: 768px) {
 
     .main-title {
         font-size: 30px;
